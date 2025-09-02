@@ -1,6 +1,7 @@
 // main.dart
 import 'package:flutter/material.dart';
 import 'package:test_flutter/screens/splashscreen.dart';
+import 'package:test_flutter/screens/chats.dart';
 import 'package:test_flutter/theme/theme.dart'; // Importa el tema
 
 void main() {
@@ -27,19 +28,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body:Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("Soy la home de esta app"),
-            Text("Soy la home de esta app"),
-            Text("Soy la home de esta app"),
-            Text("Soy la home de esta app"),
-            Icon(Icons.bathtub),
-          ],
-        ),
-      )
-    ); // Usa el ChatsScreen en lugar de la lista
+    return const ChatsScreen(); // Usa el ChatsScreen en lugar de la lista
   }
 }
